@@ -24,7 +24,7 @@ $(document).ready(function() {
       }
     }
     $("#survey").hide();
-    $("#loadingDiv").show();
+    $("#loadingDiv").show().removeClass().addClass("loadingDiv");
     //Displays survey output and hides loading icon after 2000ms
     setTimeout(function() {
       $("#loadingDiv").hide();

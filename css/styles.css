@@ -23,7 +23,7 @@ form {
 }
 
 .panel-heading {
-  font-size: 25px;
+  font-size: 30px;
   font-weight: bold;
   border-radius: 10px 10px 0 0;
 }
@@ -146,6 +146,14 @@ tr:nth-child(even) {
   background-color: #ddd;
 }
 
+#loadingDiv p {
+  font-size: 20px;
+}
+
+#loadingDiv h1 {
+  margin-bottom: 60px;
+}
+
 /* Initially Hidden */
 #output {
   display: none;
@@ -163,6 +171,7 @@ tr:nth-child(even) {
   width: 100px;
   height: 100px;
   animation: spin 1s linear infinite;
+  margin: 20px auto;
 }
 
 @keyframes spin {
