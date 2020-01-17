@@ -1,5 +1,6 @@
 body {
   text-align: center;
+  background-color: #ddd;
 }
 
 form {
@@ -14,10 +15,14 @@ form {
   width: 50%;
   height: auto;
   margin: 30px auto;
+  -webkit-box-shadow: 9px 9px 28px -2px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 9px 9px 28px -2px rgba(0,0,0,0.5);
+  box-shadow: 9px 9px 28px -2px rgba(0,0,0,0.5);
 }
 
 .panel-heading {
   font-size: 25px;
+  font-weight: bold;
 }
 
 .panel-body {
@@ -32,6 +37,7 @@ h3 {
   width: 100%;
   font-size: 20px;
   margin-top: 10px;
+  font-weight: bold;
 }
 
 ul {

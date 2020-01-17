@@ -27,8 +27,6 @@ $(document).ready(function() {
     //Display best-fit language based on user scores
     //Javascript wins
     if(jsScore >= pyScore && jsScore >= csScore && csScore >= pyScore) {
-      $("#mainTitle").hide();
-      $("#mainSubheading").hide();
       $("#survey").hide();
       $("#languageName").text("Javascript");
       $("#scoreList").append("<li>Javascript: " + jsScore + "</li>");
@@ -37,8 +35,6 @@ $(document).ready(function() {
       $("#cs").hide();
       $("#py").hide();
     } else if(jsScore >= pyScore && jsScore >= csScore && pyScore >= csScore) {
-      $("#mainTitle").hide();
-      $("#mainSubheading").hide();
       $("#survey").hide();
       $("#languageName").text("Javascript");
       $("#scoreList").append("<li>Javascript: " + jsScore + "</li>");
@@ -48,8 +44,6 @@ $(document).ready(function() {
       $("#py").hide();
     //C# wins
     } else if(csScore >= pyScore && csScore > jsScore && jsScore >= pyScore) {
-      $("#mainTitle").hide();
-      $("#mainSubheading").hide();
       $("#survey").hide();
       $("#languageName").text("C#");
       $("#scoreList").append("<li>C#: " + csScore + "</li>");
@@ -58,8 +52,6 @@ $(document).ready(function() {
       $("#js").hide();
       $("#py").hide();
     } else if(csScore >= pyScore && csScore > jsScore && pyScore > jsScore) {
-      $("#mainTitle").hide();
-      $("#mainSubheading").hide();
       $("#survey").hide();
       $("#languageName").text("C#");
       $("#scoreList").append("<li>C#: " + csScore + "</li>");
@@ -69,8 +61,6 @@ $(document).ready(function() {
       $("#py").hide();
     //Python wins
     } else if(pyScore > jsScore && pyScore > csScore && jsScore >= csScore) {
-      $("#mainTitle").hide();
-      $("#mainSubheading").hide();
       $("#survey").hide();
       $("#languageName").text("Python");
       $("#scoreList").append("<li>Python: " + pyScore + "</li>");
@@ -79,8 +69,6 @@ $(document).ready(function() {
       $("#js").hide();
       $("#cs").hide();
     } else if(pyScore > jsScore && pyScore > csScore && csScore > jsScore) {
-      $("#mainTitle").hide();
-      $("#mainSubheading").hide();
       $("#survey").hide();
       $("#languageName").text("Python");
       $("#scoreList").append("<li>Python: " + pyScore + "</li>");
