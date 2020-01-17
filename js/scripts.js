@@ -85,4 +85,16 @@ $(document).ready(function() {
       }, 2000);
     }, 500);
   });
+  $("#refreshButton").click(function() {
+    $("#output").slideUp();
+    setTimeout(function() {
+      $("#leavingDiv").fadeIn()
+      setTimeout(function() {
+        $("#leavingDiv").fadeOut();
+        setTimeout(function() {
+          location.reload(true);
+        }, 500);
+      }, 2000);
+    }, 500);
+  })
 });
