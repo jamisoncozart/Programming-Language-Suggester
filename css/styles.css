@@ -16,9 +16,9 @@ form {
   width: 50%;
   height: auto;
   margin: 30px auto;
-  -webkit-box-shadow: 9px 9px 28px -2px rgba(0, 0, 0, 0.5);
-  -moz-box-shadow: 9px 9px 28px -2px rgba(0,0,0,0.5);
-  box-shadow: 9px 9px 28px -2px rgba(0,0,0,0.5);
+  -webkit-box-shadow: 9px 9px 15px -2px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 9px 9px 15px -2px rgba(0,0,0,0.3);
+  box-shadow: 9px 9px 15px -2px rgba(0,0,0,0.3);
   border-radius: 10px;
 }
 
@@ -183,6 +183,7 @@ tr:nth-child(even) {
   height: 100px;
   animation: spin 1s linear infinite;
   margin: 20px auto;
+
 }
 
 @keyframes spin {
@@ -190,23 +191,27 @@ tr:nth-child(even) {
   100% { transform: rotate(360deg); }
 }
 
+/* Media Queries */
 @media screen and (max-width: 1700px) {
   .panel {
     width: 80%;
   }
 }
-
 @media screen and (max-width: 1110px) {
   .container {
     width: 80%;
   }
 }
-
 @media screen and (max-width: 740px) {
   .container, .panel {
     width: 100%;
   }
   .panel.panel-primary {
     margin-top: 15px;
+  }
+  .panel {
+    -webkit-box-shadow: 4px 4px 8px -2px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 4px 4px 8px -2px rgba(0,0,0,0.2);
+    box-shadow: 4px 4px 8px -2px rgba(0,0,0,0.2);
   }
 }
