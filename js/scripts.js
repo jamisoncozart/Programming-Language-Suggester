@@ -25,54 +25,56 @@ $(document).ready(function() {
     }
     $("#survey").hide();
     $("#output").show();
+
+    console.log("Javascript: " + jsScore + " | C#: " + csScore + " | Python: " + pyScore);
     //Display best-fit language based on user scores
     //Javascript wins
     if(jsScore >= pyScore && jsScore >= csScore && csScore >= pyScore) {
       $("#languageName").text("Javascript!");
-      $("#scoreList").append("<li>Javascript: " + jsScore + "</li>");
-      $("#scoreList").append("<li>C#: " + csScore + "</li>");
-      $("#scoreList").append("<li>Python: " + pyScore + "</li>");
+      $("#scoreList").append("<tr><td>Javascript</td><td>" + jsScore + "</td></tr>");
+      $("#scoreList").append("<tr><td>C#</td><td>" + csScore + "</td></tr>");
+      $("#scoreList").append("<tr><td>Python</td><td>" + pyScore + "</td></tr>");
       $("#cs").hide();
       $("#py").hide();
     } else if(jsScore >= pyScore && jsScore >= csScore && pyScore >= csScore) {
       $("#languageName").text("Javascript!");
-      $("#scoreList").append("<li>Javascript: " + jsScore + "</li>");
-      $("#scoreList").append("<li>Python: " + pyScore + "</li>");
-      $("#scoreList").append("<li>C#: " + csScore + "</li>");
+      $("#scoreList").append("<tr><td>Javascript</td><td>" + jsScore + "</td></tr>");
+      $("#scoreList").append("<tr><td>Python</td><td>" + pyScore + "</td></tr>");
+      $("#scoreList").append("<tr><td>C#</td><td>" + csScore + "</td></tr>");
       $("#cs").hide();
       $("#py").hide();
     //C# wins
     } else if(csScore >= pyScore && csScore > jsScore && jsScore >= pyScore) {
       $("#languageName").text("C#!");
-      $("#scoreList").append("<li>C#: " + csScore + "</li>");
-      $("#scoreList").append("<li>Javascript: " + jsScore + "</li>");
-      $("#scoreList").append("<li>Python: " + pyScore + "</li>");
+      $("#scoreList").append("<tr><td>C#</td><td>" + csScore + "</td></tr>");
+      $("#scoreList").append("<tr><td>Javascript</td><td>" + jsScore + "</td></tr>");
+      $("#scoreList").append("<tr><td>Python</td><td>" + pyScore + "</td></tr>");
       $("#js").hide();
       $("#py").hide();
     } else if(csScore >= pyScore && csScore > jsScore && pyScore > jsScore) {
       $("#languageName").text("C#!");
-      $("#scoreList").append("<li>C#: " + csScore + "</li>");
-      $("#scoreList").append("<li>Python: " + pyScore + "</li>");
-      $("#scoreList").append("<li>Javascript: " + jsScore + "</li>");
+      $("#scoreList").append("<tr><td>C#</td><td>" + csScore + "</td></tr>");
+      $("#scoreList").append("<tr><td>Python</td><td>" + pyScore + "</td></tr>");
+      $("#scoreList").append("<tr><td>Javascript</td><td>" + jsScore + "</td></tr>");
       $("#js").hide();
       $("#py").hide();
-    //Python wins
+    //Pytdon wins
     } else if(pyScore > jsScore && pyScore > csScore && jsScore >= csScore) {
       $("#languageName").text("Python!");
-      $("#scoreList").append("<li>Python: " + pyScore + "</li>");
-      $("#scoreList").append("<li>Javascript: " + jsScore + "</li>");
-      $("#scoreList").append("<li>C#: " + csScore + "</li>");
+      $("#scoreList").append("<tr><td>Python</td><td>" + pyScore + "</td></tr>");
+      $("#scoreList").append("<tr><td>Javascript</td><td>" + jsScore + "</td></tr>");
+      $("#scoreList").append("<tr><td>C#</td><td>" + csScore + "</td></tr>");
       $("#js").hide();
       $("#cs").hide();
     } else if(pyScore > jsScore && pyScore > csScore && csScore > jsScore) {
       $("#languageName").text("Python!");
-      $("#scoreList").append("<li>Python: " + pyScore + "</li>");
-      $("#scoreList").append("<li>C#: " + csScore + "</li>");
-      $("#scoreList").append("<li>Javascript: " + jsScore + "</li>");
+      $("#scoreList").append("<tr><td>Python</td><td>" + pyScore + "</td></tr>");
+      $("#scoreList").append("<tr><td>C#</td><td>" + csScore + "</td></tr>");
+      $("#scoreList").append("<tr><td>Javascript</td><td>" + jsScore + "</td></tr>");
       $("#js").hide();
       $("#cs").hide();
     } else {
-      $("#mainTitle").empty().text("Something went wrong...");
+      $("#mainTitle").empty().text("Sometding went wrong...");
     }
   })
 })

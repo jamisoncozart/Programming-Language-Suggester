@@ -19,11 +19,13 @@ form {
   -webkit-box-shadow: 9px 9px 28px -2px rgba(0, 0, 0, 0.5);
   -moz-box-shadow: 9px 9px 28px -2px rgba(0,0,0,0.5);
   box-shadow: 9px 9px 28px -2px rgba(0,0,0,0.5);
+  border-radius: 10px;
 }
 
 .panel-heading {
   font-size: 25px;
   font-weight: bold;
+  border-radius: 10px 10px 0 0;
 }
 
 .panel-body {
@@ -55,7 +57,7 @@ ul {
 
 hr {
   margin-top: 5px;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   border: 1px solid #bbb;
 }
 
@@ -79,6 +81,10 @@ hr {
   box-shadow: 6px 6px 10px 0px rgba(0, 0, 0, 0.32);
   transition: 0.1s;
   top: -5px;
+}
+
+#languageName {
+  font-size: 30px;
 }
 
 a {
@@ -120,6 +126,24 @@ iframe {
 .innerPanel p {
   font-size: 16px;
   padding: 0 10px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  -webkit-box-shadow: 4px 4px 7px 0px rgba(0,0,0,0.4);
+  -moz-box-shadow: 4px 4px 7px 0px rgba(0,0,0,0.4);
+  box-shadow: 4px 4px 7px 0px rgba(0,0,0,0.4);
+}
+
+td, th {
+  text-align: left;
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #ddd;
 }
 
 /* Initially Hidden */
