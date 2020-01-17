@@ -1,6 +1,7 @@
 body {
   text-align: center;
   background-color: #ddd;
+  font-family: 'Roboto', sans-serif;
 }
 
 form {
@@ -33,6 +34,12 @@ h3 {
   margin: 0;
 }
 
+h4 {
+  margin-top: 0;
+  font-size: 20px;
+  font-weight: bold;
+}
+
 #submit {
   width: 100%;
   font-size: 20px;
@@ -42,6 +49,11 @@ h3 {
 
 ul {
   text-align: left;
+  font-size: 18px;
+}
+
+hr {
+  border: 1px solid #bbb;
 }
 
 /* Initially Hidden */
