@@ -9,9 +9,9 @@
 </head>
 <body>
   <div class="container">
-    <h1>Which coding language is the best fit for you?</h1>
-    <h2>Take this survey to find out if Javascript, C#, or Python is the right language for you</h2>
-    <div class="panel">
+    <h1 id="mainTitle">Which coding language is the best fit for you?</h1>
+    <h2 id="mainSubheading">Take this survey to find out if Javascript, C#, or Python is the right language for you</h2>
+    <div id="survey" class="panel">
       <h3>Question-group-descriptor</h3>
       <hr>
       <form id="form">
@@ -97,6 +97,27 @@
         </div>
         <input type="submit">
       </form>
+    </div>
+    <div id="output">
+      <h1>Your Ideal Coding Language Is...</h1>
+      <div class="panel">
+        <h3 id="languageName"></h3>
+        <hr>
+        <h4>Scores:</h4>
+        <ul id="scoreList">
+        </ul>
+        <hr>
+        <h4>Suggested Learning Material:</h4>
+        <div class="studyMaterial" id="js">
+          <p>Javascript Learning materials...</p>
+        </div>
+        <div class="studyMaterial" id="cs">
+          <p>C# Learning materials...</p>
+        </div>
+        <div class="studyMaterial" id="py">
+          <p>Python Learning materials...</p>
+        </div>
+      </div>
     </div>
   </div>
 </body>
