@@ -155,6 +155,10 @@ tr:nth-child(even) {
 }
 
 /* Initially Hidden */
+#survey {
+  display: none;
+}
+
 #output {
   display: none;
 }
