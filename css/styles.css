@@ -50,10 +50,76 @@ h4 {
 ul {
   text-align: left;
   font-size: 18px;
+  padding: 0 0 0 25px;
 }
 
 hr {
+  margin-top: 5px;
+  margin-bottom: 10px;
   border: 1px solid #bbb;
+}
+
+.innerPanel {
+  border: 2px solid #bbb;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 20px;
+  -webkit-box-shadow: 4px 4px 7px 0px rgba(0,0,0,0.2);
+  -moz-box-shadow: 4px 4px 7px 0px rgba(0,0,0,0.2);
+  box-shadow: 4px 4px 7px 0px rgba(0,0,0,0.2);
+  height: auto;
+  top: 0;
+  position: relative;
+  transition: top 0.1s ease;
+}
+
+.studyMaterial .innerPanel:hover {
+  -webkit-box-shadow: 6px 6px 10px 0px rgba(0, 0, 0, 0.32);
+  -moz-box-shadow: 6px 6px 10px 0px rgba(0, 0, 0, 0.32);
+  box-shadow: 6px 6px 10px 0px rgba(0, 0, 0, 0.32);
+  transition: 0.1s;
+  top: -5px;
+}
+
+a {
+  color: #000;
+}
+
+a:hover {
+  color: #000;
+  text-decoration: none;
+}
+
+.imgPanel {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 10px;
+}
+
+img {
+  height: 75px;
+  width: auto;
+  margin: 5px;
+}
+
+p {
+  margin: auto;
+}
+
+iframe {
+  width: 100%;
+  height: 250px;
+}
+
+#studyTitle {
+  font-size: 20px;
+  margin-top: 30px;
+}
+
+.innerPanel p {
+  font-size: 16px;
+  padding: 0 10px;
 }
 
 /* Initially Hidden */
