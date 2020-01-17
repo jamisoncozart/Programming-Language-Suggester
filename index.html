@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/jquery.js"></script>
+  <script src="js/scripts.js"></script>
+  <title>Programming Language Suggester</title>
+</head>
+<body>
+  <div class="container">
+    <h1>Which coding language is the best fit for you?</h1>
+    <h2>Take this survey to find out if Javascript, C#, or Python is the right language for you</h2>
+    <div class="panel">
+      <h3>Question-group-descriptor</h3>
+      <hr>
+      <form id="form">
+        <!-- Question 1 -->
+        <label>What do you want to make?</label>
+        <div class="radio">
+          <label>
+            <input type="radio" name="make" value="js" checked>
+            Websites!
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="make" value="cs">
+            Games!
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="make" value="py">
+            Artificial Intelligence!
+          </label>
+        </div>
+        <!-- Question 2 -->
+        <label>How much do you care about syntax?</label>
+        <div class="radio">
+          <label>
+            <input type="radio" name="syntax" value="py" checked>
+            I want to basically write sentences.
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="syntax" value="js">
+            I want some formal syntax, but easy to understand.
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="syntax" value="cs">
+            I want most of my errors to come from syntax errors.
+          </label>
+        </div>
+        <input type="submit">
+      </form>
+    </div>
+  </div>
+</body>
+</html>
