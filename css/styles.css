@@ -146,12 +146,19 @@ tr:nth-child(even) {
   background-color: #ddd;
 }
 
+#loadingDiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 #loadingDiv p {
   font-size: 20px;
 }
 
 #loadingDiv h1 {
-  margin-bottom: 60px;
+  margin: 60px 0;
+  line-height: 60px;
 }
 
 /* Initially Hidden */
@@ -181,4 +188,25 @@ tr:nth-child(even) {
 @keyframes spin {
   0% { transform: rotate(0deg); }
   100% { transform: rotate(360deg); }
+}
+
+@media screen and (max-width: 1700px) {
+  .panel {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 1110px) {
+  .container {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 740px) {
+  .container, .panel {
+    width: 100%;
+  }
+  .panel.panel-primary {
+    margin-top: 15px;
+  }
 }
