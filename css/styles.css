@@ -1,0 +1,44 @@
+body {
+  text-align: center;
+}
+
+form {
+  text-align: left;
+}
+
+.container {
+  width: 50%;
+}
+
+.panel {
+  width: 50%;
+  height: auto;
+  margin: 30px auto;
+}
+
+.panel-heading {
+  font-size: 25px;
+}
+
+.panel-body {
+  padding: 20px;
+}
+
+h3 {
+  margin: 0;
+}
+
+#submit {
+  width: 100%;
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+ul {
+  text-align: left;
+}
+
+/* Initially Hidden */
+#output {
+  display: none;
+}

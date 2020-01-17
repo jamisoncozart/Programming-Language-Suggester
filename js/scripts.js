@@ -22,6 +22,7 @@ $(document).ready(function() {
         console.log("Something went wrong");
       }
     }
+    $("#output").show();
     
     //Display best-fit language based on user scores
     //Javascript wins

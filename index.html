@@ -10,97 +10,99 @@
 <body>
   <div class="container">
     <h1 id="mainTitle">Which coding language is the best fit for you?</h1>
-    <h2 id="mainSubheading">Take this survey to find out if Javascript, C#, or Python is the right language for you</h2>
-    <div id="survey" class="panel">
-      <h3>Question-group-descriptor</h3>
-      <hr>
-      <form id="form">
-        <!-- Question 1 -->
-        <label>What do you want to make?</label>
-        <div class="radio">
-          <label>
-            <input type="radio" name="make" value="js" checked>
-            Websites!
-          </label>
-        </div>
-        <div class="radio">
-          <label>
-            <input type="radio" name="make" value="cs">
-            Games!
-          </label>
-        </div>
-        <div class="radio">
-          <label>
-            <input type="radio" name="make" value="py">
-            Artificial Intelligence!
-          </label>
-        </div>
-        <!-- Question 2 -->
-        <label>How much do you care about syntax?</label>
-        <div class="radio">
-          <label>
-            <input type="radio" name="syntax" value="py" checked>
-            I want to basically write sentences.
-          </label>
-        </div>
-        <div class="radio">
-          <label>
-            <input type="radio" name="syntax" value="js">
-            I want some formal syntax, but easy to understand.
-          </label>
-        </div>
-        <div class="radio">
-          <label>
-            <input type="radio" name="syntax" value="cs">
-            I want most of my errors to come from syntax errors.
-          </label>
-        </div>
-        <!-- Question 3 -->
-        <label>What industry do you want to work in?</label>
-        <div class="radio">
-          <label>
-            <input type="radio" name="industry" value="py" checked>
-            Data Analysis and Automation
-          </label>
-        </div>
-        <div class="radio">
-          <label>
-            <input type="radio" name="industry" value="cs">
-            App Development and Backend Servers
-          </label>
-        </div>
-        <div class="radio">
-          <label>
-            <input type="radio" name="industry" value="js">
-            Web Development and Backend Servers
-          </label>
-        </div>
-        <!-- Question 4 -->
-        <label>How popular do you want your first language to be?</label>
-        <div class="radio">
-          <label>
-            <input type="radio" name="popular" value="js" checked>
-            The most popular!
-          </label>
-        </div>
-        <div class="radio">
-          <label>
-            <input type="radio" name="popular" value="py">
-            Very popular!
-          </label>
-        </div>
-        <div class="radio">
-          <label>
-            <input type="radio" name="popular" value="cs">
-            Somewhat popular!
-          </label>
-        </div>
-        <input type="submit">
-      </form>
+    <h2 id="mainSubheading">Take this survey to find out if <em>Javascript</em>, <em>C#</em>, <br>or <em>Python</em> is the right language for you!</h2>
+    <div id="survey" class="panel panel-primary">
+      <div class="panel-heading">Survey</div>
+      <div class="panel-body">
+        <form id="form">
+          <!-- Question 1 -->
+          <label>What do you want to make?</label>
+          <div class="radio">
+            <label>
+              <input type="radio" name="make" value="js" checked>
+              Websites!
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="make" value="cs">
+              Games!
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="make" value="py">
+              Artificial Intelligence!
+            </label>
+          </div>
+          <!-- Question 2 -->
+          <label>How much do you care about syntax?</label>
+          <div class="radio">
+            <label>
+              <input type="radio" name="syntax" value="py" checked>
+              I want to basically write sentences.
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="syntax" value="js">
+              I want some formal syntax, but easy to understand.
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="syntax" value="cs">
+              I want most of my errors to come from syntax errors.
+            </label>
+          </div>
+          <!-- Question 3 -->
+          <label>What industry do you want to work in?</label>
+          <div class="radio">
+            <label>
+              <input type="radio" name="industry" value="py" checked>
+              Data Analysis and Automation
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="industry" value="cs">
+              App Development and Backend Servers
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="industry" value="js">
+              Web Development and Backend Servers
+            </label>
+          </div>
+          <!-- Question 4 -->
+          <label>How popular do you want your first language to be?</label>
+          <div class="radio">
+            <label>
+              <input type="radio" name="popular" value="js" checked>
+              The most popular!
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="popular" value="py">
+              Very popular!
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="popular" value="cs">
+              Somewhat popular!
+            </label>
+          </div>
+          <input id="submit" type="submit" class="btn btn-primary">
+        </form>
+      </div>
     </div>
+    <!-- Survey results output -->
     <div id="output">
       <h1>Your Ideal Coding Language Is...</h1>
-      <div class="panel">
+      <div class="panel panel-primary">
         <h3 id="languageName"></h3>
         <hr>
         <h4>Scores:</h4>
@@ -109,13 +111,19 @@
         <hr>
         <h4>Suggested Learning Material:</h4>
         <div class="studyMaterial" id="js">
-          <p>Javascript Learning materials...</p>
+          <iframe width="420" height="315"
+          src="https://www.youtube.com/embed/W6NZfCO5SIk">
+          </iframe>
         </div>
         <div class="studyMaterial" id="cs">
-          <p>C# Learning materials...</p>
+          <iframe width="420" height="315"
+          src="https://www.youtube.com/embed/GhQdlIFylQ8">
+          </iframe>
         </div>
         <div class="studyMaterial" id="py">
-          <p>Python Learning materials...</p>
+          <iframe width="420" height="315"
+          src="https://www.youtube.com/embed/rfscVS0vtbw">
+          </iframe>
         </div>
       </div>
     </div>
