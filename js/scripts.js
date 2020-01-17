@@ -7,9 +7,8 @@ $(document).ready(function() {
     //Store all form input values
     var q1Value = $("input:radio[name=make]:checked").val();
     var q2Value = $("input:radio[name=syntax]:checked").val();
-
+    //Loop through all question values and add 1 to language score.
     var valueArray = [q1Value, q2Value];
-
     for(let i = 0; i < valueArray.length; i++) {
       if(valueArray[i] === "js") {
         jsScore++;
@@ -21,6 +20,7 @@ $(document).ready(function() {
         console.log("Something went wrong");
       }
     }
-    console.log("Javascript: " + jsScore + " | C#: " + csScore + " | Python: " + pyScore);
+    
+    //Display best-fit language based on user scores
   })
 })
