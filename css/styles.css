@@ -139,7 +139,7 @@ table {
 td, th {
   text-align: left;
   border: 1px solid #ddd;
-  padding: 8px;
+  padding: 8px 12px;
 }
 
 tr:nth-child(even) {
@@ -151,9 +151,11 @@ tr:nth-child(even) {
   display: none;
 }
 
+#loadingDiv {
+  display: none;
+}
 
 /* Loading Icon */
-
 .loader {
   border: 16px solid #f3f3f3;
   border-radius: 50%;
