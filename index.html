@@ -1,196 +1,196 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/bootstrap.css">
-  <link rel="stylesheet" href="css/styles.css">
-  <script src="js/jquery.js"></script>
-  <script src="js/scripts.js"></script>
-  <title>Programming Language Suggester</title>
-</head>
-<body>
-  <div class="container">
-    <div id="survey" class="panel panel-primary">
-      <div class="panel-heading">What coding language <br>is right for you?</div>
-      <div class="panel-body">
-        <form id="form">
-          <!-- Question 1 -->
-          <label>What do you want to make?</label>
-          <div class="radio">
-            <label>
-              <input type="radio" name="make" value="js" checked>
-              Websites!
-            </label>
-          </div>
-          <div class="radio">
-            <label>
-              <input type="radio" name="make" value="cs">
-              Apps!
-            </label>
-          </div>
-          <div class="radio">
-            <label>
-              <input type="radio" name="make" value="py">
-              Artificial Intelligence!
-            </label>
-          </div>
-          <!-- Question 2 -->
-          <label>How much do you care about syntax?</label>
-          <div class="radio">
-            <label>
-              <input type="radio" name="syntax" value="py" checked>
-              I want to basically write sentences.
-            </label>
-          </div>
-          <div class="radio">
-            <label>
-              <input type="radio" name="syntax" value="js">
-              I want some formal syntax, but easy to understand.
-            </label>
-          </div>
-          <div class="radio">
-            <label>
-              <input type="radio" name="syntax" value="cs">
-              I want most of my errors to come from syntax errors.
-            </label>
-          </div>
-          <!-- Question 3 -->
-          <label>What industry do you want to work in?</label>
-          <div class="radio">
-            <label>
-              <input type="radio" name="industry" value="py" checked>
-              Data Analysis and Automation
-            </label>
-          </div>
-          <div class="radio">
-            <label>
-              <input type="radio" name="industry" value="cs">
-              App Development and Backend Servers
-            </label>
-          </div>
-          <div class="radio">
-            <label>
-              <input type="radio" name="industry" value="js">
-              Web Development and Backend Servers
-            </label>
-          </div>
-          <!-- Question 4 -->
-          <label>How popular do you want your first language to be?</label>
-          <div class="radio">
-            <label>
-              <input type="radio" name="popular" value="js" checked>
-              The most popular!
-            </label>
-          </div>
-          <div class="radio">
-            <label>
-              <input type="radio" name="popular" value="py">
-              Very popular!
-            </label>
-          </div>
-          <div class="radio">
-            <label>
-              <input type="radio" name="popular" value="cs">
-              Somewhat popular!
-            </label>
-          </div>
-          <!-- Question 5 -->
-          <label>What do you like more?</label>
-          <div class="radio">
-            <label>
-              <input type="radio" name="like" value="cs" checked>
-              Music
-            </label>
-          </div>
-          <div class="radio">
-            <label>
-              <input type="radio" name="like" value="py">
-              Snakes
-            </label>
-          </div>
-          <div class="radio">
-            <label>
-              <input type="radio" name="like" value="js">
-              Coffee
-            </label>
-          </div>
-          <input id="submit" type="submit" class="btn btn-primary">
-        </form>
-      </div>
-    </div>
-    <div id="loadingDiv">
-      <h1><strong>Your Ideal Coding <br>Language Is...</strong></h1>
-      <div class="loader"></div>
-      <p><strong>Loading...</strong></p>
-    </div>
-    <div id="leavingDiv">
-      <h1><strong>Refreshing Survey</strong></h1>
-      <div class="loader"></div>
-      <p><strong>Loading...</strong></p>
-    </div>
-    <!-- Survey results output -->
-    <div id="output">
-      <div class="panel panel-primary">
-        <div class="panel-heading" id="languageName"></div>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/jquery.js"></script>
+    <script src="js/scripts.js"></script>
+    <title>Programming Language Suggester</title>
+  </head>
+  <body>
+    <div class="container">
+      <div id="survey" class="panel panel-primary">
+        <div class="panel-heading">What coding language <br>is right for you?</div>
         <div class="panel-body">
-          <table id="scoreList">
-            <tr>
-              <th>Language</th>
-              <th>Score</th>
-            </tr>
-          </table>
-          <h4 id="studyTitle">Suggested Learning Material:</h4>
-          <hr>
-          <div class="studyMaterial" id="js">
-            <a href="https://eloquentjavascript.net/">
-              <div class="innerPanel imgPanel">
-                <img src="img/eloquentJS.jpg" alt="Image of Eloquent Javascript">
-                <p>Eloquent Javascript - A Modern Introduction to Programming</p>
-              </div>
-            </a>
-            <a href="https://www.udemy.com/course/the-web-developer-bootcamp/">
-              <div class="innerPanel imgPanel">
-                <img src="img/colt.jpg" alt="Image of Web Dev Bootcamp Udemy Course">
-                <p>The Web Developer Bootcamp - The only course you need to learn web development</p>
-              </div>
-            </a>
-            <iframe src="https://www.youtube.com/embed/W6NZfCO5SIk"></iframe>
+          <form id="form">
+            <!-- Question 1 -->
+            <label>What do you want to make?</label>
+            <div class="radio">
+              <label>
+                <input type="radio" name="make" value="js" checked>
+                Websites!
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="make" value="cs">
+                Apps!
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="make" value="py">
+                Artificial Intelligence!
+              </label>
+            </div>
+            <!-- Question 2 -->
+            <label>How much do you care about syntax?</label>
+            <div class="radio">
+              <label>
+                <input type="radio" name="syntax" value="py" checked>
+                I want to basically write sentences.
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="syntax" value="js">
+                I want some formal syntax, but easy to understand.
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="syntax" value="cs">
+                I want most of my errors to come from syntax errors.
+              </label>
+            </div>
+            <!-- Question 3 -->
+            <label>What industry do you want to work in?</label>
+            <div class="radio">
+              <label>
+                <input type="radio" name="industry" value="py" checked>
+                Data Analysis and Automation
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="industry" value="cs">
+                App Development and Backend Servers
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="industry" value="js">
+                Web Development and Backend Servers
+              </label>
+            </div>
+            <!-- Question 4 -->
+            <label>How popular do you want your first language to be?</label>
+            <div class="radio">
+              <label>
+                <input type="radio" name="popular" value="js" checked>
+                The most popular!
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="popular" value="py">
+                Very popular!
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="popular" value="cs">
+                Somewhat popular!
+              </label>
+            </div>
+            <!-- Question 5 -->
+            <label>What do you like more?</label>
+            <div class="radio">
+              <label>
+                <input type="radio" name="like" value="cs" checked>
+                Music
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="like" value="py">
+                Snakes
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="like" value="js">
+                Coffee
+              </label>
+            </div>
+            <input id="submit" type="submit" class="btn btn-primary">
+          </form>
+        </div>
+      </div>
+      <div id="loadingDiv">
+        <h1><strong>Your Ideal Coding <br>Language Is...</strong></h1>
+        <div class="loader"></div>
+        <p><strong>Loading...</strong></p>
+      </div>
+      <div id="leavingDiv">
+        <h1><strong>Refreshing Survey</strong></h1>
+        <div class="loader"></div>
+        <p><strong>Loading...</strong></p>
+      </div>
+      <!-- Survey results output -->
+      <div id="output">
+        <div class="panel panel-primary">
+          <div class="panel-heading" id="languageName"></div>
+          <div class="panel-body">
+            <table id="scoreList">
+              <tr>
+                <th>Language</th>
+                <th>Score</th>
+              </tr>
+            </table>
+            <h4 id="studyTitle">Suggested Learning Material:</h4>
+            <hr>
+            <div class="studyMaterial" id="js">
+              <a href="https://eloquentjavascript.net/">
+                <div class="innerPanel imgPanel">
+                  <img src="img/eloquentJS.jpg" alt="Image of Eloquent Javascript">
+                  <p>Eloquent Javascript - A Modern Introduction to Programming</p>
+                </div>
+              </a>
+              <a href="https://www.udemy.com/course/the-web-developer-bootcamp/">
+                <div class="innerPanel imgPanel">
+                  <img src="img/colt.jpg" alt="Image of Web Dev Bootcamp Udemy Course">
+                  <p>The Web Developer Bootcamp - The only course you need to learn web development</p>
+                </div>
+              </a>
+              <iframe src="https://www.youtube.com/embed/W6NZfCO5SIk"></iframe>
+            </div>
+            <div class="studyMaterial" id="cs">
+              <a href="http://starboundsoftware.com/books/c-sharp/">
+                <div class="innerPanel imgPanel">
+                  <img src="img/cSharp.jpg" alt="Image of The C# Player's Guide">
+                  <p>The C# Player's Guide - Using C# 7.0 and Visual Studio 2017</p>
+                </div>
+              </a>
+              <a href="https://www.udemy.com/course/csharp-tutorial-for-beginners/">
+                <div class="innerPanel imgPanel">
+                  <img src="img/csUdemy.png" alt="Image of C# Udemy Course">
+                  <p>C# Basics for Beginners: Learn C# Fundamentals by Coding</p>
+                </div>
+              </a>
+              <iframe src="https://www.youtube.com/embed/GhQdlIFylQ8"></iframe>
+            </div>
+            <div class="studyMaterial" id="py">
+              <a href="https://www.amazon.com/Python-Crash-Course-Hands-Project-Based/dp/1593276036">
+                <div class="innerPanel imgPanel">
+                  <img src="img/python.jpg" alt="Image of Python Crash Course">
+                  <p>Python Crash Course - A Hands-On, Project-Based Introduction to Programming</p>
+                </div>
+              </a>
+              <a href="https://www.udemy.com/course/complete-python-bootcamp/">
+                <div class="innerPanel imgPanel">
+                  <img src="img/pythonUdemy.png" alt="Image of Python 3 Bootcamp Udemy Course">
+                  <p>Complete Python Bootcamp: Go from Zero to Hero in Python 3</p>
+                </div>
+              </a>
+              <iframe src="https://www.youtube.com/embed/rfscVS0vtbw"></iframe>
+            </div>
+            <button id="refreshButton" type="button" class="btn btn-primary">Retry Survey</button>
           </div>
-          <div class="studyMaterial" id="cs">
-            <a href="http://starboundsoftware.com/books/c-sharp/">
-              <div class="innerPanel imgPanel">
-                <img src="img/cSharp.jpg" alt="Image of The C# Player's Guide">
-                <p>The C# Player's Guide - Using C# 7.0 and Visual Studio 2017</p>
-              </div>
-            </a>
-            <a href="https://www.udemy.com/course/csharp-tutorial-for-beginners/">
-              <div class="innerPanel imgPanel">
-                <img src="img/csUdemy.png" alt="Image of C# Udemy Course">
-                <p>C# Basics for Beginners: Learn C# Fundamentals by Coding</p>
-              </div>
-            </a>
-            <iframe src="https://www.youtube.com/embed/GhQdlIFylQ8"></iframe>
-          </div>
-          <div class="studyMaterial" id="py">
-            <a href="https://www.amazon.com/Python-Crash-Course-Hands-Project-Based/dp/1593276036">
-              <div class="innerPanel imgPanel">
-                <img src="img/python.jpg" alt="Image of Python Crash Course">
-                <p>Python Crash Course - A Hands-On, Project-Based Introduction to Programming</p>
-              </div>
-            </a>
-            <a href="https://www.udemy.com/course/complete-python-bootcamp/">
-              <div class="innerPanel imgPanel">
-                <img src="img/pythonUdemy.png" alt="Image of Python 3 Bootcamp Udemy Course">
-                <p>Complete Python Bootcamp: Go from zero to hero in Python 3</p>
-              </div>
-            </a>
-            <iframe src="https://www.youtube.com/embed/rfscVS0vtbw"></iframe>
-          </div>
-          <button id="refreshButton" type="button" class="btn btn-primary">Retry Survey</button>
         </div>
       </div>
     </div>
-  </div>
-</body>
+  </body>
 </html>

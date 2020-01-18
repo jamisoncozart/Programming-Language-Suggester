@@ -46,48 +46,48 @@ function chooseLanguage(jsScore, csScore, pyScore) {
     $("#scoreList").append("<tr><td>Javascript</td><td>" + jsScore + "</td></tr>");
     $("#scoreList").append("<tr><td>C#</td><td>" + csScore + "</td></tr>");
     $("#scoreList").append("<tr><td>Python</td><td>" + pyScore + "</td></tr>");
-    $("#cs").hide();
-    $("#py").hide();
+    hideLangs("#cs", "#py");
   } else if(jsScore >= pyScore && jsScore >= csScore && pyScore >= csScore) {
     $("#languageName").text("Javascript!");
     $("#scoreList").append("<tr><td>Javascript</td><td>" + jsScore + "</td></tr>");
     $("#scoreList").append("<tr><td>Python</td><td>" + pyScore + "</td></tr>");
     $("#scoreList").append("<tr><td>C#</td><td>" + csScore + "</td></tr>");
-    $("#cs").hide();
-    $("#py").hide();
+    hideLangs("#cs", "#py");
   //C# wins
   } else if(csScore >= pyScore && csScore > jsScore && jsScore >= pyScore) {
     $("#languageName").text("C#!");
     $("#scoreList").append("<tr><td>C#</td><td>" + csScore + "</td></tr>");
     $("#scoreList").append("<tr><td>Javascript</td><td>" + jsScore + "</td></tr>");
     $("#scoreList").append("<tr><td>Python</td><td>" + pyScore + "</td></tr>");
-    $("#js").hide();
-    $("#py").hide();
+    hideLangs("#js", "#py");
   } else if(csScore >= pyScore && csScore > jsScore && pyScore > jsScore) {
     $("#languageName").text("C#!");
     $("#scoreList").append("<tr><td>C#</td><td>" + csScore + "</td></tr>");
     $("#scoreList").append("<tr><td>Python</td><td>" + pyScore + "</td></tr>");
     $("#scoreList").append("<tr><td>Javascript</td><td>" + jsScore + "</td></tr>");
-    $("#js").hide();
-    $("#py").hide();
+    hideLangs("#js", "#py");
   //Python wins
   } else if(pyScore > jsScore && pyScore > csScore && jsScore >= csScore) {
     $("#languageName").text("Python!");
     $("#scoreList").append("<tr><td>Python</td><td>" + pyScore + "</td></tr>");
     $("#scoreList").append("<tr><td>Javascript</td><td>" + jsScore + "</td></tr>");
     $("#scoreList").append("<tr><td>C#</td><td>" + csScore + "</td></tr>");
-    $("#js").hide();
-    $("#cs").hide();
+    hideLangs("#js", "#cs");
   } else if(pyScore > jsScore && pyScore > csScore && csScore > jsScore) {
     $("#languageName").text("Python!");
     $("#scoreList").append("<tr><td>Python</td><td>" + pyScore + "</td></tr>");
     $("#scoreList").append("<tr><td>C#</td><td>" + csScore + "</td></tr>");
     $("#scoreList").append("<tr><td>Javascript</td><td>" + jsScore + "</td></tr>");
-    $("#js").hide();
-    $("#cs").hide();
+    hideLangs("#js", "#cs");
   } else {
     $("#mainTitle").empty().text("Sometding went wrong...");
   }
+}
+
+//hides html elements (languages) that are passed into it
+function hideLangs(lang1, lang2) {
+  $(lang1).hide();
+  $(lang2).hide();
 }
 
 //shows results after short animation

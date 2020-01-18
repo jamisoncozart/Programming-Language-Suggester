@@ -172,15 +172,12 @@ tr:nth-child(even) {
 #survey {
   display: none;
 }
-
 #output {
   display: none;
 }
-
 #loadingDiv {
   display: none;
 }
-
 #leavingDiv {
   display: none;
 }
@@ -196,7 +193,6 @@ tr:nth-child(even) {
   margin: 20px auto;
 
 }
-
 @keyframes spin {
   0% { transform: rotate(0deg); }
   100% { transform: rotate(360deg); }
