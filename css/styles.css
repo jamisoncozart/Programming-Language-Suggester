@@ -244,7 +244,4 @@ footer img {
     -moz-box-shadow: 4px 4px 8px -2px rgba(0,0,0,0.2);
     box-shadow: 4px 4px 8px -2px rgba(0,0,0,0.2);
   }
-  input[type=radio] {
-    transform: scale(1.5);
-  }
 }
