@@ -1,7 +1,13 @@
+html {
+  min-height: 100vh;
+}
+
 body {
   text-align: center;
   background-color: #ddd;
   font-family: 'Roboto', sans-serif;
+  min-height: 100vh;
+  position: relative;
 }
 
 form {
@@ -20,6 +26,7 @@ form {
   -moz-box-shadow: 9px 9px 15px -2px rgba(0,0,0,0.3);
   box-shadow: 9px 9px 15px -2px rgba(0,0,0,0.3);
   border-radius: 10px;
+  margin-bottom: 90px;
 }
 
 .panel-heading {
@@ -166,6 +173,22 @@ tr:nth-child(even) {
   font-size: 20px;
   margin-top: 10px;
   font-weight: bold;
+}
+
+footer {
+  background-color: #fff;
+  color: #000;
+  width: 100%;
+  font-size: 18px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+footer img {
+  height: 50px;
+  width: auto;
+  margin-left: 20px;
 }
 
 /* Initially Hidden */
